@@ -71,14 +71,6 @@ class Button extends React.Component {
     }
 }
 
-class Text extends React.Component {
-    render() {
-        return (
-            <p id={this.props.id}>{this.props.text}</p>
-        )
-    }
-}
-
 class Game extends React.Component {
     constructor(props) {
         super(props);
@@ -89,7 +81,6 @@ class Game extends React.Component {
             <div id="game">
                 <Keyboard />
                 <Button handleClick={() => start()} id="start" text="Start" />
-                <Text id="time" text="0s" />
             </div>
         );
     };
